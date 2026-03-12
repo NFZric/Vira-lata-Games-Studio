@@ -1,0 +1,20 @@
+body {
+    background-color: #1a1a1a; /* Cor escura estilo gamer */
+    color: white;
+    font-family: sans-serif;
+}
+
+#game-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.game-card {
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
