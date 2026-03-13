@@ -8,42 +8,55 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="imagens/logo-zero.ico">
 </head>
 <body>
 
 <header>
-    <img src="imagens/logo-zerostudio.png" alt="Logo Studio Vira-Lata Games" class="logo">
+    <img src="imagens/paçoquinha-pixel-art.png" alt="imagem Games" class="logo">
     <h1>Studio Zer0</h1>
-    <p>Studio indie de jogos<p>
+    <p>Studio indie de jogos</p>
 </header>
 
 <main>
-    <h2>Confira Nossos Jogos</h2>
+    <h2>Confira Nossos Jogos 
+
+    </h2>
+
 
     <div class="game-container"> 
-
         <div class="game-card"> 
-            <img src="imagens/dinoCoin.png" alt="Capa do Jogo 1" class="game-image">
+            <img src="imagens/DinoCoin.png" alt="Capa do Jogo 1" class="game-image">
             <div class="game-details">
                 <h3>Dino Coin - Versão Windows</h3>
-                <p>Dino Coin, um jogo simples onde o objetivo é pegar moedas e derrotar bosses, tendo vários itens para customizar o personagem e melhorar a gameplay, esse jogo ainda esta em fase de desenvolvimento qualquer bug ou erro noe avise aqui = studio.zero.games.ofc@gmail.com.</p>
-                <p>Para jogar no windows: extrair a o arquivo e quando estiver extraido você deve abrir a pasta e execultar o arquivo "DinoCoin.exe"</p>
-                <p>Para jogar no celular/android, baixe o apk depois instale ele no seu dispositivo ele irá aparecer do lado dos apps q você ja tem clique nele e jogue</p>
-                <a href="https://www.mediafire.com/file/6i5l366vm9ii2kg/DinoCoin.zip/file" class="btn-comprar" target="_blank">Versão de pc/windows(mediafire)</a>
-                <a href="https://www.mediafire.com/file/dyc8cvpbzbfcjnh/DinoCoin.apk/file" class="btn-comprar" target="_blank">Versão de celular/Android(mediafire)</a>
+                <p>Dino Coin é um jogo simples focado em coletar moedas e derrotar bosses.</p>
+                
+                <div class="game-gallery">
+                    <h4>Screenshots da Gameplay</h4>
+                    <div class="screenshot-grid">
+                        <img src="imagens/print1.png" alt="Dino Coin 1" class="screenshot">
+                        <img src="imagens/print2.png" alt="Dino Coin 2" class="screenshot hidden">
+                        <img src="imagens/print3.png" alt="Dino Coin 3" class="screenshot hidden">
+                    </div>
+                    <button id="btn-galeria" class="btn-comprar">Mostrar Mais</button>
+                </div>
+
+                <a href="https://www.mediafire.com/file/uu4smcj94qdqm1i/DinoCoin-V-Alpha_teste.zip/file" class="btn-comprar" target="_blank">Versão PC/windows(Mediafire)</a>
+                <a href="https://www.mediafire.com/file/btf7oinpy4wncyz/DinoCoin-V-Alpha-teste.apk/file" class="btn-comprar" target="_blank">Versão Celular/Android (Mediafire)</a>
             </div>
-        </div> <div class="game-card">
-            <img src="imagens/sem-game.png" alt="Capa do Jogo 2" class="game-image">
-            <div class="game-details">
-                <h3>Jogo 2</h3>
-                <p>Em breve uma nova aventura do Studio Zer0 disponível para vocês!</p>
-                <a href="#" class="btn-comprar">Ver jogo</a>
-            </div>
-        </div> </div> </main>
+        </div>
+    </div> 
+</main>
 
 <footer>
     <p>&copy; 2026 Studio Zer0. Todos os direitos reservados.</p>
 </footer>
 
+<div id="lightbox" class="lightbox">
+    <span class="fechar">&times;</span>
+    <img class="lightbox-content" id="img-ampliada">
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
